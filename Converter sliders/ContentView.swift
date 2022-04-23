@@ -21,7 +21,7 @@ struct ContentView: View {
                 VStack{
                     HeadingWidget(words: "Measurement Converter")
                     Group{
-                        Slider(value: $celsius, in: -100...100)
+                        Slider(value: $celsius, in: -100...100).accentColor(.black)
                         HStack{
                             TextWidget(words: String(format: "%.2f", celsius) + " Celsius")
                             Spacer()
@@ -29,7 +29,7 @@ struct ContentView: View {
                         }
                     }
                     Group{
-                        Slider(value: $meters, in: 0...50)
+                        Slider(value: $meters, in: 0...50).accentColor(.black)
                         HStack{
                             TextWidget(words: String(format: "%.2f", meters) + " Meters")
                             Spacer()
@@ -37,7 +37,7 @@ struct ContentView: View {
                         }
                     }
                     Group{
-                        Slider(value: $meters2, in: 0...10)
+                        Slider(value: $meters2, in: 0...10).accentColor(.black)
                         HStack{
                             TextWidget(words: String(format: "%.2f", meters2) + " Meters")
                             Spacer()
@@ -45,7 +45,7 @@ struct ContentView: View {
                         }
                     }
                     Group{
-                        Slider(value: $kilometers, in: 0...100)
+                        Slider(value: $kilometers, in: 0...100).accentColor(.black)
                         HStack{
                             TextWidget(words: String(format: "%.2f", kilometers) + " Kilometers")
                             Spacer()
@@ -53,7 +53,7 @@ struct ContentView: View {
                         }
                     }
                     Group{
-                        Slider(value: $litres, in: 0...10)
+                        Slider(value: $litres, in: 0...10).accentColor(.black)
                         HStack{
                             TextWidget(words: String(format: "%.2f", litres) + " Litres")
                             Spacer()
@@ -61,7 +61,7 @@ struct ContentView: View {
                         }
                     }
                     Group{
-                        Slider(value: $kilograms, in: 0...100)
+                        Slider(value: $kilograms, in: 0...100).accentColor(.black)
                         HStack{
                             TextWidget(words: String(format: "%.2f", kilograms) + " Kilograms")
                             Spacer()
